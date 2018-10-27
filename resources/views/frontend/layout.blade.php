@@ -64,40 +64,7 @@
                     <img src="{{ URL::asset('assets/upload/hinhanh/logo-tiecngonvn.png') }}" alt="logo tiecngon.vn" />
                 </a>
             </div>
-            <div class="menu">
-                <div class="nav-toogle">
-                    <i class="fa fa-bars"></i>
-                </div>
-                <ul class="nav-menu" id="mainmenu">
-                    <li @if($routeName=='home' ) class="active" @endif><a href="{{ route('home') }}">Trang chủ </a></li>
-
-                    <li class="{{ (!isset($pageDetail) && $routeName == 'parent-cate') || $routeName == 'dich-vu' ? 'active' : '' }} parent">
-                        <a href="javascript:;">Menu</a>
-                        <ul class="submenu">
-                            @foreach($articlesCateList as $cate)
-                            <li class="parent">
-                                <a href="{{ route('parent-cate', $cate->slug) }}">{!! $cate->name !!}</a>
-                                <ul class="submenu">
-                                    @foreach($cate->articles as $value)
-                                    <li class="menu-cap-2"><a href="{{ route('dich-vu', [$value->slug, $value->id]) }}" title="{!! $value->title !!}">{!! $value->title !!}</a></li>
-                                    @endforeach
-                                </ul>
-                            </li>
-                            @endforeach
-                        </ul>
-                    </li>
-                    <li class="{{ $routeName == 'menu-custom' ? 'active' : '' }}"><a href="{{ route('menu-custom')}}">Món</a></li>
-                    </li>
-                    <li class="{{ $routeName == 'menu-custom' ? 'active' : '' }}"><a href="{{ route('menu-custom')}}">Dịch vụ</a></li>
-                    </li>
-                    <li data-url="{{ route('tao-menu') }}" class="{{ $routeName == 'tao-menu' ? 'active' : '' }} @if(!Session::get('userId')) login-by-facebook-popup @endif"><a @if(Session::get( 'userId')) href="{{ route('tao-menu')}}" @else href="javascript:void(0);" @endif>Tạo menu</a></li>
-                    </li>
-                    <li class="{{ $routeName == 'news-list' || $routeName == 'news-detail' ? 'active' : '' }}"><a href="{{ route('news-list', 'khuyen-mai') }}">Khuyến mãi</a></li>
-                    <li class="{{ $routeName == 'contact' ? 'active' : '' }}"><a href="{{ route('contact') }}">Liên hệ</a></li>
-                    <li class="search-mb"><i class="fa fa-search"></i></li>
-                </ul>
-
-            </div>
+            
         </div>
         <div class="clear"></div>
     </div>

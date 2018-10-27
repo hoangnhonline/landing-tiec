@@ -5,5 +5,5 @@
 	@include('frontend.home.slider')  
 @stop
 @section('content')  
-  @include('frontend.home.news')
+ 
 @stop

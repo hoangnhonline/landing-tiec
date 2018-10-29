@@ -3138,7 +3138,7 @@ h3 {
     text-shadow: 3px 3px 5px #fff, 3px 3px 5px #fff, 3px -3px 5px #fff, -3px 3px 5px #fff;
 }
 .item-wr3 .content {
-    background-color: #ff96009e;
+    background-color: #f6e0a6;
     padding: 3px;
     height: 320px;
     overflow-y: auto;
@@ -4078,9 +4078,9 @@ ul.product-list {
     font-size: 16px;
     word-spacing: -3px;
 }
-.panel-default>.panel-heading+.panel-collapse>.panel-body{
-    border-top-color: #000;
-    background: #d1d1d2;
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+    background: #ededed;
 }
 .fadeInLeft{
     color : #e56100; margin-bottom:20px;font-weight:bold

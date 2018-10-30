@@ -33,6 +33,7 @@ class Articles extends Model  {
                             'display_order', 
                             'description', 
                             'image_url', 
+                            'url',
                             'content', 
                             'meta_id', 
                             'created_user', 

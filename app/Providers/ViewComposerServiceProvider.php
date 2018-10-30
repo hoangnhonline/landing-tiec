@@ -48,16 +48,16 @@ class ViewComposerServiceProvider extends ServiceProvider
 			$articlesCateList = ArticlesCate::where('is_menu', 1)->orderBy('display_order')->get();
 	        $settingArr = Settings::whereRaw('1')->lists('value', 'name');
 	        $routeName = \Request::route()->getName();
-	        $menuList = Menu::whereNull('customer_id')->orderBy('display_order')->get();   
-	       // var_dump("<pre>", $menuDoc);die;   
-	        //var_dump("<pre>", $loaiSpKey);die;
+	        $menuList = Menu::whereNull('customer_id')->orderBy('display_order')->get();   	      
 	        $articlesListFooter = Articles::where(['cate_id' => 1])->orderBy('id', 'desc')->limit(4)->get();
+	        $tiec2List = Articles::where(['cate_id' => 6])->orderBy('display_order')->limit(6)->get();
 			$view->with( [			
 					'menuList' => $menuList,
 					'settingArr' => $settingArr,					
 					'routeName' => $routeName,
 					'articlesCateList' => $articlesCateList,
-					'articlesListFooter' => $articlesListFooter
+					'articlesListFooter' => $articlesListFooter,
+					'tiec2List' => $tiec2List
 					] );
 		});
 	}

@@ -12,15 +12,20 @@
                      </a>
                   </h4>
                   <div  id="collapseListMenu01">
-                     <ul class="list-menu">
-                        
-                        <li class="li_menu"><a href="{{ route('home')}}">Trang chủ</a></li>                       
-                        <li><a class="li_menu" href="{{ route('parent-cate', 'gioi-thieu') }}" >Giới thiệu</a></li>
-                     <li><a class="li_menu" href="{{ route('menu-custom')}}" >Menu tự chọn</a></li>
-                     <li><a class="li_menu" href="{{ route('contact')}}" >Liên hệ</a></li>
-                    </li> 
-                        
-                     </ul>
+                     @foreach($tiec2List as $articles)                   
+                     <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="icons">
+                           <a href="{{ $articles->url }}" title="{!! $articles->title !!}">
+                              <img class="img-thumbnail" src="{!! Helper::showImage($articles->image_url) !!}" alt="{!! $articles->title !!}">
+                           </a>
+                        </div>
+                        <h5 style="padding-top: 5px;">
+                           <a style="color: #FFF" href="{{ $articles->url }}" title="{!! $articles->title !!}">
+                           {!! $articles->title !!}
+                           </a>
+                        </h5>          
+                     </div>                
+                     @endforeach 
                   </div>
                </div>
             </div>

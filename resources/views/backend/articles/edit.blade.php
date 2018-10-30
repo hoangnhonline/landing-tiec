@@ -77,6 +77,11 @@
                   </div>
                   <div style="clear:both"></div>
                 </div>
+                <div class="form-group" >
+                  
+                  <label>URL <span class="red-star">*</span></label>
+                  <input type="text" class="form-control" name="url" id="url" value="{{ old('url', $detail->url) }}">
+                </div>
                 <div style="clear:both"></div>                
                 <!-- textarea -->
                 <div class="form-group">

@@ -27,12 +27,12 @@
 				@foreach($tiecList as $articles)							
 				<li class="col-md-2 col-sm-4 col-xs-6">
 					<div class="icon">
-						<a style="height: 100%" href="{{ route('news-detail', ['slug' => $articles->slug, 'id' => $articles->id]) }}" title="{!! $articles->title !!}">
+						<a style="height: 100%" href="{{ $articles->url }}" title="{!! $articles->title !!}">
 							<img style="height: 100%" src="{!! Helper::showImage($articles->image_url) !!}" alt="{!! $articles->title !!}">
 						</a>
 					</div>
 					<h5>
-						<a href="{{ route('news-detail', ['slug' => $articles->slug, 'id' => $articles->id]) }}" title="{!! $articles->title !!}">
+						<a href="{{ $articles->url }}" title="{!! $articles->title !!}">
 						{!! $articles->title !!}
 						</a>
 					</h5>				

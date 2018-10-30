@@ -513,8 +513,9 @@ h3 {
     margin: 0px;
     padding-top: 5px;
     padding-bottom:5px;
-    float: left;
+  
     margin-right: 10px;
+    text-align: center;
 }
 .logo img {
     max-width: 100%;

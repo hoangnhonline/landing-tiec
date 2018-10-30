@@ -61,7 +61,8 @@
             <tr>
               <th style="width: 1%">#</th>              
               <th width="190">Thumbnail</th>
-              <th>Tiêu đề</th>
+              <th width="300">Tiêu đề</th>
+              <th>URL</th>
               <th width="1%;white-space:nowrap">Thao tác</th>
             </tr>
             <tbody>
@@ -83,6 +84,7 @@
 
                   <p>{{ $item->description }}</p>
                 </td>
+                <td>{!! $item->url !!}</td>
                 <td style="white-space:nowrap"> 
                   <a class="btn btn-default btn-sm" href="{{ route('news-detail', [$item->slug, $item->id ]) }}" target="_blank"><i class="fa fa-eye" aria-hidden="true"></i> Xem</a>                 
                   <a href="{{ route( 'articles.edit', [ 'id' => $item->id ]) }}" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span></a>                 

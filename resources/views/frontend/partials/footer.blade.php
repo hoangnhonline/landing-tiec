@@ -39,15 +39,17 @@
                   </h4>
                   <div id="collapseListMenu03">
                      <ul class="list-menu">
+                        <li class="li_menu"><i class="fa fa-map-marker"></i> 236 Nguyễn Thái Bình - P.12 - Q.Tân Bình </li>
+
+                        <li class="li_menu"><i class="fa fa-map-marker"></i> 9 Tân Thành - P.Hòa Thạnh - Q.Tân Phú  </li>
                         
-                        <li class="li_menu"><i class="fa fa-map-marker"></i> 146 Kênh Tân Hóa - P Phú Trung- Q.Tân Phú </li>
+                        <li class="li_menu"><i class="fa fa-map-marker"></i> 2 Thạnh Lộc 13 KP 1. P.Thạnh Lộc. Q12. TP HCM </li>
                         
-                        <li class="li_menu"><i class="fa fa-map-marker"></i> 2/13/22 đường Thạnh Lộc 13 KP 1. P.Thạnh Lộc. Q12. TP HCM </li>
+                        <li class="li_menu"><i class="fa fa-mobile"></i> 090 2425 068 Mr. Duy</li>
                         
-                        <li class="li_menu"><i class="fa fa-mobile"></i> 090 2425 068 ( A.Duy )</li>
-                        
-                        <li class="li_menu"><i class="fa fa-mobile"></i> 0981 498 043 ( A.Dũng )</li>
-                        
+                        <li class="li_menu"><i class="fa fa-mobile"></i> 0981 498 043 Mr. Dũng</li>
+			
+	                        
                         <li class="li_menu">Website: <a href="http://tiecngon.vn" style="color:#FFF">http://tiecngon.vn/</a></li>
                         <p> </p>
                   <p> </p>
